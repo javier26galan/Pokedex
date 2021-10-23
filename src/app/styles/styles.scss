@@ -1,0 +1,27 @@
+@import './colors';
+@import './fonts';
+@import './responsive';
+@import './sizes';
+@import './container';
+@import './navbar';
+@import './main';
+@import './footer';
+@import './card';
+@import './finder';
+@import './home';
+@import './tag';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'gameboy';
+    font-weight: normal;
+    font-style: normal;
+    background-color:$primary;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

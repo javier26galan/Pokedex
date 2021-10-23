@@ -1,0 +1,39 @@
+.home{
+    &__logo-container{
+        width: 100%;
+    }
+    &__logo{
+        width: 100%;
+    }
+    &__random{
+        width: 40%;
+    }
+    &__img{
+        width: 100%;
+        animation: pokemon 6s infinite;
+    }
+}
+
+@keyframes pokemon{
+    0%{transform:scale(1)}
+    5%{transform:rotate(5deg)}
+    10%{transform:scale(1.1)}
+    15%{transform:rotate(-5deg)}
+    20%{transform:scale(1)}
+    25%{transform:rotate(5deg)}
+    30%{transform:scale(1.1)}
+    35%{transform:rotate(-5deg)}
+    40%{transform:scale(1)}
+    45%{transform:rotate(5deg)}
+    50%{transform:scale(1.1)}
+    55%{transform:rotate(-5deg)}
+    60%{transform:scale(1)}
+    65%{transform:rotate(5deg)}
+    70%{transform:scale(1.1)}
+    75%{transform:rotate(-5deg)}
+    80%{transform:scale(1)}
+    85%{transform:rotate(5deg)}
+    90%{transform:scale(1.1)}
+    95%{transform:rotate(-5deg)}
+    100%{transform:scale(1)}
+}

@@ -1,0 +1,9 @@
+.footer{
+    text-align: center;
+    &__text{
+    font-size: 10px; 
+    @media (min-width: 350px) {
+        font-size:20px;
+    }
+    }
+}

@@ -1,0 +1,179 @@
+.card{
+    display: none;
+    position: fixed;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border: 5px dashed $body-color;
+    background-color:$normal;
+    font-size:10px;
+
+    &__btn{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+    }
+    @media (min-width:350px){
+        width: 280px;
+        font-size:18px;
+
+    }
+    &__container{
+        width: 100%;
+    }
+    &__img{
+        width:100%;
+    }
+}
+// card Background
+.bug{
+    background-color: $bug;   
+}
+
+.dark{
+    background-color: $dark;   
+}
+
+.dragon{
+    background-color: $dragon;
+}
+
+.electric{
+    background-color: $electric;
+}
+
+.fairy{
+    background-color: $fairy;
+}
+
+.fighting{
+    background-color: $figth;
+}
+
+.fire{
+    background-color: $fire;
+}
+
+.flying{
+    background-color: $flying;
+}
+
+.ghost{
+    background-color: $ghost;
+}
+
+.grass{
+    background-color: $grass;
+}
+
+.ground{
+    background-color: $ground;
+}
+
+.ice{
+    background-color: $ice;
+}
+
+.normal{
+    background-color: $normal;
+}
+
+.poison{
+    background-color: $poison;
+}
+
+.psychic{
+    background-color: $psychic;
+}
+
+.rock{
+    background-color: $rock;
+}
+
+.steell{
+    background-color: $steel;
+}
+
+.water{
+    background-color: $water;
+}
+
+// card border
+.border-bug{
+    border: 5px solid $bug;   
+}
+
+.border-dark{
+    border: 5px solid $dark;   
+}
+
+.border-dragon{
+    border: 5px solid $dragon;
+}
+
+.border-electric{
+    border: 5px solid $electric;
+}
+
+.border-fairy{
+    border: 5px solid $fairy;
+}
+
+.border-fighting{
+    border: 5px solid $figth;
+}
+
+.border-fire{
+    border: 5px solid $fire;
+}
+
+.border-flying{
+    border: 5px solid $flying;
+}
+
+.border-ghost{
+    border: 5px solid $ghost;
+}
+
+.border-grass{
+    border: 5px solid $grass;
+}
+
+.border-ground{
+    border: 5px solid $ground;
+}
+
+.border-ice{
+    border: 5px solid $ice;
+}
+
+.border-normal{
+    border: 5px solid $normal;
+}
+
+.border-poison{
+    border: 5px solid $poison;
+}
+
+.border-psychic{
+    border: 5px solid $psychic;
+}
+
+.border-rock{
+    border: 5px solid $rock;
+}
+
+.border-steel{
+    border: 5px solid $steel;
+}
+
+.border-water{
+    border: 5px solid $water;
+}

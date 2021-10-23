@@ -1,0 +1,18 @@
+.finder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px 10px 0px;
+    &__item{
+        width: 80%;
+        padding: 10px 0px;
+        border: 3px solid $btn;
+        background-color:$body-bg;
+        font-family: 'gameboy';
+        font-size:12px;
+        text-align: center;
+        @media (min-width: 350px){
+            width:auto;
+        }
+    }
+}

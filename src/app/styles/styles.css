@@ -1,0 +1,611 @@
+@font-face {
+  font-family: 'gameboy';
+  src: url("../assets/fonts/gameboy/gameboy.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1px;
+  z-index: 99;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 12px;
+  background-color: #45A49A;
+  border-top: 5px solid #7258AB;
+  border-bottom: 5px solid #7258AB;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar__item {
+  cursor: pointer;
+}
+
+.main__view {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 10px;
+}
+
+@media (min-width: 350px) {
+  .footer__text {
+    font-size: 20px;
+  }
+}
+
+.card {
+  display: none;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  border: 5px dashed black;
+  background-color: #AFA796;
+  font-size: 10px;
+}
+
+.card__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+@media (min-width: 350px) {
+  .card {
+    width: 280px;
+    font-size: 18px;
+  }
+}
+
+.card__container {
+  width: 100%;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.bug {
+  background-color: #88960D;
+}
+
+.dark {
+  background-color: #3C2D23;
+}
+
+.dragon {
+  background-color: #43328F;
+}
+
+.electric {
+  background-color: #E79302;
+}
+
+.fairy {
+  background-color: #E08EE0;
+}
+
+.fighting {
+  background-color: #5F2311;
+}
+
+.fire {
+  background-color: #C72100;
+}
+
+.flying {
+  background-color: #5E74D4;
+}
+
+.ghost {
+  background-color: #4A4A98;
+}
+
+.grass {
+  background-color: #277801;
+}
+
+.ground {
+  background-color: #AD8C32;
+}
+
+.ice {
+  background-color: #6DD3F5;
+}
+
+.normal {
+  background-color: #AFA796;
+}
+
+.poison {
+  background-color: #6D2470;
+}
+
+.psychic {
+  background-color: #DD3165;
+}
+
+.rock {
+  background-color: #9E853D;
+}
+
+.steell {
+  background-color: #8E8E9E;
+}
+
+.water {
+  background-color: #0C67C2;
+}
+
+.border-bug {
+  border: 5px solid #88960D;
+}
+
+.border-dark {
+  border: 5px solid #3C2D23;
+}
+
+.border-dragon {
+  border: 5px solid #43328F;
+}
+
+.border-electric {
+  border: 5px solid #E79302;
+}
+
+.border-fairy {
+  border: 5px solid #E08EE0;
+}
+
+.border-fighting {
+  border: 5px solid #5F2311;
+}
+
+.border-fire {
+  border: 5px solid #C72100;
+}
+
+.border-flying {
+  border: 5px solid #5E74D4;
+}
+
+.border-ghost {
+  border: 5px solid #4A4A98;
+}
+
+.border-grass {
+  border: 5px solid #277801;
+}
+
+.border-ground {
+  border: 5px solid #AD8C32;
+}
+
+.border-ice {
+  border: 5px solid #6DD3F5;
+}
+
+.border-normal {
+  border: 5px solid #AFA796;
+}
+
+.border-poison {
+  border: 5px solid #6D2470;
+}
+
+.border-psychic {
+  border: 5px solid #DD3165;
+}
+
+.border-rock {
+  border: 5px solid #9E853D;
+}
+
+.border-steel {
+  border: 5px solid #8E8E9E;
+}
+
+.border-water {
+  border: 5px solid #0C67C2;
+}
+
+.finder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px 10px 0px;
+}
+
+.finder__item {
+  width: 80%;
+  padding: 10px 0px;
+  border: 3px solid #7258AB;
+  background-color: lightblue;
+  font-family: 'gameboy';
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (min-width: 350px) {
+  .finder__item {
+    width: auto;
+  }
+}
+
+.home__logo-container {
+  width: 100%;
+}
+
+.home__logo {
+  width: 100%;
+}
+
+.home__random {
+  width: 40%;
+}
+
+.home__img {
+  width: 100%;
+  -webkit-animation: pokemon 6s infinite;
+          animation: pokemon 6s infinite;
+}
+
+@-webkit-keyframes pokemon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  5% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  30% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  35% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  55% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pokemon {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  5% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  10% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  30% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  35% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  55% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  65% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.tag {
+  width: 250px;
+  border: 5px solid #45A49A;
+  margin: 12px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #76d7c4;
+  cursor: pointer;
+}
+
+.tag__img-container {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.tag__img {
+  width: 100%;
+}
+
+.tag__img:hover {
+  -webkit-animation-name: pokeball;
+          animation-name: pokeball;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.tag__id {
+  font-size: 12px;
+  margin: 0 auto;
+}
+
+.tag__name {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+@-webkit-keyframes pokeball {
+  0% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  20% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  40% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  70% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  85% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pokeball {
+  0% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  20% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  40% {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  70% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  85% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'gameboy';
+  font-weight: normal;
+  font-style: normal;
+  background-color: #206960;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=styles.css.map */

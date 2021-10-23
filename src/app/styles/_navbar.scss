@@ -1,0 +1,16 @@
+.navbar{
+    position:sticky;
+    top: 1px;
+    z-index: 99;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 12px;
+    background-color:$secondary;
+    border-top: 5px solid $btn;
+    border-bottom: 5px solid $btn;
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{cursor: pointer}
+}

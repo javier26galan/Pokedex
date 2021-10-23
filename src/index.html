@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app/styles/styles.css">
+    <title>Document</title>
+    <!-- los export no me funcionaban sin el atributo module -->
+    <script src="../src/app/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li id="home" class="navbar__item">Home</li>
+                <li id="pokedex" class="navbar__item">Pokedex</li>
+            </ul>
+        </nav>
+        <main id="main__content" class="main">
+            <div class="card" id="card"><span class="card__btn" id="close-btn">X</span>
+                <div class="card__container" id="card-container">
+                    <img class="card__img" id="card-img" src="">
+                </div>
+                <span class="card__id" id="card-id"></span>
+                <span class="card__name" id="card-name"></span>
+                <div class="card__types">
+                    <span class="card__type" id="card-type"></span>
+                    <span class="card__type2" id="card-type-2"></span>
+                </div>
+            </div>
+            <div class="finder">
+                <input class="finder__item" id="finder" type="text" placeholder="Find a Pokemon">
+            </div>
+            <div id="view" class="main__view"></div>
+        </main>
+        <footer class="footer">
+            <span class="footer__text">Built by Javier Galan :v</span>
+        </footer>
+    </div>
+</body>
+
+</html>
